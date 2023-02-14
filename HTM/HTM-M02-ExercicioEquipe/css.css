@@ -1,3 +1,4 @@
+/* ################ ESTILIZAÇÕES GLOBAIS ################*/
 * {
     margin: 0;
     padding: 0;
@@ -9,27 +10,32 @@ a {
     all: unset;
 }
 
-nav {
-    padding: 10px 22px;
+/* ################ ESTILIZAÇÕES GLOBAIS ################*/
+
+/* ################ ESTILIZAÇÕES DO CABEÇALHO ################*/
+header {
+    padding: 12px 22px;
     display: flex;
     justify-content: flex-end;
 }
 
-nav > div {
+header > nav {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-nav > div > a {
+header > nav > a {
     cursor: pointer;
+    color: rgba(0,0,0,.87);
+    font-size: 13px;
 }
 
-nav > div > a:hover {
+header > nav > a:hover {
     text-decoration: underline;
 }
 
-nav > div > #profile {
+header > nav > #apps {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,30 +48,113 @@ nav > div > #profile {
     font-size: small;
 }
 
-nav > div > #profile:hover {
+header > nav > #apps:hover {
     background-color: #EEE;
 }
 
-nav > div > #user {
+header > nav > #user {
     width: 30px;
     height: 30px;
     background-color: purple;
     border-radius: 100%;
     cursor: pointer;
     border: none;
+    color: #FFF;
 }
+
+/* ################ ESTILIZAÇÕES DO CABEÇALHO ################*/
+
+/* ################ ESTILIZAÇÕES DA PARTE PRINCIPAL DA PÁGINA ################*/
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 23px;
+}
+
+/* ################ ESTILIZAÇÕES DA LOGO DO GOOGLE ################*/
+
+main > img {
+    width: 272px; 
+    height: 92px;
+}
+
+/* ################ ESTILIZAÇÕES DA LOGO DO GOOGLE ################*/
+
+/* ################ ESTILIZAÇÕES DO INPUT ################*/
+
+.search-bar {
+    position: relative;
+}
+
+.search-bar input {
+    width: 584px;
+    padding: 15px 90px 15px 37px;
+    border-radius: 24px;
+    border: 1px solid #ddd;
+    z-index: 2;
+}
+
+.search-bar input:hover {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.11);
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+#search-icon {
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 20px;
+    height: 20px;
+    fill: #9aa0a6;
+}
+
+.search-bar .right-icons {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    transform: translate(0, -50%);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+#microphone-icon {
+    width: 32px;
+    height: 32px;
+    background-image: url("source/microphone-icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#image-search-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.search-bar > span:nth-child(2) {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+
+
+/* ################ ESTILIZAÇÕES DO INPUT ################*/
 
 .center {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.search {
-    width: 500px;
-    height: 50px;
-    border-radius: 24px;
-    border: 1px solid rgb(63, 63, 63);
 }
 
 footer ul {
@@ -82,43 +171,6 @@ footer li {
     font-family: Arial, sans-serif;
 }
 
-.search-bar {
-    position: relative;
-}
-
-.search-bar input {
-    padding: 10px;
-    padding-left: 37px;
-    padding-right: 90px;
-    width: 400px;
-    border-radius: 24px;
-    border: 1px solid #ddd;
-}
-
-.search-bar input:hover {
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.11);
-    transition: ease 0.3s;
-}
-
-.search-bar input:focus {
-    outline: none;
-}
-
-.search-bar > span:nth-child(2) {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translate(0, -50%);
-}
-
-.search-bar .icones-direita {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translate(0, -50%);
-    display: flex;
-    align-items: center;
-}
 
 .bottom {
     position: fixed;
@@ -130,8 +182,8 @@ footer li {
 
 .buttons {
     display: flex;
-    gap: 10px;
-    padding: 20px;
+    /* gap: 10px; */
+    /* padding: 20px; */
 }
 
 .buttons button {
