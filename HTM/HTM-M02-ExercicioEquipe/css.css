@@ -67,6 +67,10 @@ header > nav > #user {
 /* ################ ESTILIZAÇÕES DA PARTE PRINCIPAL DA PÁGINA ################*/
 
 main {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
     justify-content: center;
