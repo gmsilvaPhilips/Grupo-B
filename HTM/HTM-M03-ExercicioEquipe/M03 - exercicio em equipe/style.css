@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+}
+
+/* HEADER */
+
+header{
+    background-color: rgb(32, 113, 160);
+    width: 100%;
+    height: 80px;
+}
+
+header h1{
+    color: white;
+    padding-top: 25px;
+    padding-left: 10px;
+}
+
+/* MAIN */
+
+main{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+main section{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section h1{
+    font-size: 35px;
+}
+
+section a.button{
+    padding: 12px;
+    background-color: rgb(202, 202, 202);
+
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+
+    border-radius: 7px;
+}
+
+section a.button:hover{
+    background-color: rgb(151, 151, 151);
+    cursor: pointer;
+}
+
+/* TABLE */
+
+table#users{
+    margin-top: 50px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table#users td, table#users th{
+    padding: 10px;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+table#users tr:hover{
+    background-color: #f1eded;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+
+table#users th{
+    text-align: left;
+}
+
+table#users tbody tr td img{
+    width:55px;
+    border-radius: 50px;
+}
+
+table#users button#edit{
+    padding: 10px;
+    color: grey;
+    border: 1px solid grey;
+    background-color: white;
+    border-radius: 5px;
+}
+
+table#users button#delete{
+    padding: 10px;
+    color: red;
+    border: 1px solid red;
+    background-color: white;
+    border-radius: 5px;
+}
+
+table#users button:hover {
+    transition: ease-in-out 0.2s;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.073);
+    cursor: pointer;
+}
+
+table#users button#delete:hover {
+    background-color: rgba(255, 0, 0, 0.514);
+    color: white;
+}
+
+table#users button#edit:hover {
+    background-color: rgba(48, 48, 48, 0.514);
+    color: white;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(32, 113, 160);
+    width: 100%;
+    height: 80px;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+footer h1{
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+}
+
+
