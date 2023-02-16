@@ -1,113 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css" />
     <title>Me Call API - CRUD</title>
-</head>
-<body>
+  </head>
+  <body>
 
     <header>
-        <h1>Me Call API - CRUD</h1>
+      <h1>Me Call API - CRUD</h1>
     </header>
 
-
-
     <main>
+      <section>
+        <h2>Users</h2>
+        <a href="#" class="button">Create</a>
+      </section>
 
-        <section>
-            <h1>Users</h1>
-            <a href="#" class="button">Create</a>        
-        </section>
-
-        <table id="users">
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Avatar</th>
-                    <th>First</th>
-                    <th>Last</th>
-                    <th>Username</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td><img src="assets/ariane-icon.png" alt="Ícone Usuário"></td>
-                    <td>Ariane</td>
-                    <td>Pavarini</td>
-                    <td>arianepavarini</td>
-                    <td>
-                        <button id="edit">Edit</button>
-                        <button id="delete">Del</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td><img src="assets/eduardo-icon.png" alt="Ícone Usuário"></td>
-                    <td>Eduardo</td>
-                    <td>Brandt</td>
-                    <td>duduca</td>
-                    <td>
-                        <button id="edit">Edit</button>
-                        <button id="delete">Del</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td><img src="assets/gui-icon.png" alt="Ícone Usuário"></td>
-                    <td>Guilherme</td>
-                    <td>Moll</td>
-                    <td>guimoll</td>
-                    <td>
-                        <button id="edit">Edit</button>
-                        <button id="delete">Del</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td><img src="assets/igor-icon.png" alt="Ícone Usuário"></td>
-                    <td>Igor</td>
-                    <td>Semphoski</td>
-                    <td>igorsemphoski</td>
-                    <td>
-                        <button id="edit">Edit</button>
-                        <button id="delete">Del</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td><img src="assets/isa-icon.png" alt="Ícone Usuário"></td>
-                    <td>Isadora</td>
-                    <td>Firmo</td>
-                    <td>isafirmo</td>
-                    <td>
-                        <button id="edit">Edit</button>
-                        <button id="delete">Del</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td><img src="assets/joao-icon.png" alt="Ícone Usuário"></td>
-                    <td>João</td>
-                    <td>Elio</td>
-                    <td>joaoelio</td>
-                    <td>
-                        <button id="edit">Edit</button>
-                        <button id="delete">Del</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+      <table id="users">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Avatar</th>
+            <th>First</th>
+            <th>Last</th>
+            <th>Username</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><img src="assets/ariane-icon.png" alt="Ícone Usuário" /></td>
+            <td>Ariane</td>
+            <td>Pavarini</td>
+            <td>arianepavarini</td>
+            <td>
+              <button id="edit">Edit</button>
+              <button id="delete">Del</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><img src="assets/eduardo-icon.png" alt="Ícone Usuário" /></td>
+            <td>Eduardo</td>
+            <td>Brandt</td>
+            <td>duduca</td>
+            <td>
+              <button id="edit">Edit</button>
+              <button id="delete">Del</button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><img src="assets/gui-icon.png" alt="Ícone Usuário" /></td>
+            <td>Guilherme</td>
+            <td>Moll</td>
+            <td>guimoll</td>
+            <td>
+              <button id="edit">Edit</button>
+              <button id="delete">Del</button>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><img src="assets/igor-icon.png" alt="Ícone Usuário" /></td>
+            <td>Igor</td>
+            <td>Semphoski</td>
+            <td>igorsemphoski</td>
+            <td>
+              <button id="edit">Edit</button>
+              <button id="delete">Del</button>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><img src="assets/isa-icon.png" alt="Ícone Usuário" /></td>
+            <td>Isadora</td>
+            <td>Firmo</td>
+            <td>isafirmo</td>
+            <td>
+              <button id="edit">Edit</button>
+              <button id="delete">Del</button>
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><img src="assets/joao-icon.png" alt="Ícone Usuário" /></td>
+            <td>João</td>
+            <td>Elio</td>
+            <td>joaoelio</td>
+            <td>
+              <button id="edit">Edit</button>
+              <button id="delete">Del</button>
+            </td>
+          </tr>
+                    <tr>
+            <td>1</td>
+            <td><img src="assets/ariane-icon.png" alt="Ícone Usuário" /></td>
+            <td>Ariane</td>
+            <td>Pavarini</td>
+            <td>arianepavarini</td>
+            <td>
+              <button id="edit">Edit</button>
+              <button id="delete">Del</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><img src="assets/eduardo-icon.png" alt="Ícone Usuário" /></td>
+            <td>Eduardo</td>
+            <td>Brandt</td>
+            <td>duduca</td>
+            <td>
+              <button id="edit">Edit</button>
+              <button id="delete">Del</button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><img src="assets/gui-icon.png" alt="Ícone Usuário" /></td>
+            <td>Guilherme</td>
+            <td>Moll</td>
+            <td>guimoll</td>
+            <td>
+              <button id="edit">Edit</button>
+              <button id="delete">Del</button>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><img src="assets/igor-icon.png" alt="Ícone Usuário" /></td>
+            <td>Igor</td>
+            <td>Semphoski</td>
+            <td>igorsemphoski</td>
+            <td>
+              <button id="edit">Edit</button>
+              <button id="delete">Del</button>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><img src="assets/isa-icon.png" alt="Ícone Usuário" /></td>
+            <td>Isadora</td>
+            <td>Firmo</td>
+            <td>isafirmo</td>
+            <td>
+              <button id="edit">Edit</button>
+              <button id="delete">Del</button>
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><img src="assets/joao-icon.png" alt="Ícone Usuário" /></td>
+            <td>João</td>
+            <td>Elio</td>
+            <td>joaoelio</td>
+            <td>
+              <button id="edit">Edit</button>
+              <button id="delete">Del</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </main>
 
     <footer>
-        <h1>Me Call API</h1>
+      <p>Me Call API</p>
     </footer>
-
-
-</body>
+  </body>
 </html>

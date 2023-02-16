@@ -1,13 +1,13 @@
 *{
     margin:0;
     padding:0;
-    box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 22px;
 }
 
 /* HEADER */
 
+/* --- */
 header{
     background-color: rgb(32, 113, 160);
     width: 100%;
@@ -22,11 +22,14 @@ header h1{
 
 /* MAIN */
 
+/* --- */
 main{
     max-width: 80%;
     margin: 0 auto;
+    padding-bottom: 100px;
 }
 
+/* --- */
 main section{
     padding: 30px;
     display: flex;
@@ -34,11 +37,11 @@ main section{
     justify-content: space-between;
 }
 
-section h1{
+main section h2{
     font-size: 35px;
 }
 
-section a.button{
+main section a.button{
     padding: 12px;
     background-color: rgb(202, 202, 202);
 
@@ -50,35 +53,38 @@ section a.button{
     border-radius: 7px;
 }
 
-section a.button:hover{
+main section a.button:hover{
     background-color: rgb(151, 151, 151);
     cursor: pointer;
 }
 
 /* TABLE */
 
+/* --- */
 table#users{
     margin-top: 50px;
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; /*remove linhas divisórias de colunas*/
 }
 
+/* --- */
 table#users td, table#users th{
     padding: 10px;
     border-bottom: 1px solid #c5c5c5;
 }
 
+/* --- */
 table#users tr:hover{
     background-color: #f1eded;
     transition: ease-in-out 0.2s;
     cursor: pointer;
 }
 
-
 table#users th{
     text-align: left;
 }
 
+/* --- */
 table#users tbody tr td img{
     width:55px;
     border-radius: 50px;
@@ -101,23 +107,26 @@ table#users button#delete{
 }
 
 table#users button:hover {
-    transition: ease-in-out 0.2s;
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.073);
+    transition: ease-in-out 0.2s; 
     cursor: pointer;
 }
 
+/* --- */
 table#users button#delete:hover {
     background-color: rgba(255, 0, 0, 0.514);
+    box-shadow: 2px 2px 12px rgb(175, 77, 77);
     color: white;
 }
 
 table#users button#edit:hover {
     background-color: rgba(48, 48, 48, 0.514);
+    box-shadow: 2px 2px 12px rgb(116, 116, 116);
     color: white;
 }
 
 /* FOOTER */
 
+/* --- */
 footer{
     background-color: rgb(32, 113, 160);
     width: 100%;
@@ -128,10 +137,9 @@ footer{
     bottom: 0;
 }
 
-footer h1{
+footer p{
     color: white;
     text-align: center;
     margin-top: 25px;
+    font-weight: bold;
 }
-
-
